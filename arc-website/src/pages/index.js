@@ -6,6 +6,7 @@ import InfoSection from '../components/InfoSection';
 import { homeObjFour, homeObjOne, homeObjThree, homeObjTwo } from '../components/InfoSection/Data';
 import Hierarchy from '../components/Hierarchy';
 import Footer from '../components/Footer';
+import Projects from '../components/Projects';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -19,6 +20,7 @@ const Home = () => {
         <Navbar toggle={toggle}/>
         <HeroSection />
         <InfoSection { ...homeObjOne } />
+        <Projects/>
         <InfoSection { ...homeObjTwo } />
         {/* <InfoSection { ...homeObjThree } /> */}
         <Hierarchy />

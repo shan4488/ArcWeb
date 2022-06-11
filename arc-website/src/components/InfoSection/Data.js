@@ -35,7 +35,7 @@ export const homeObjTwo = {
 };
 
 export const homeObjThree = {
-    id: 'hierarchy',
+    id: 'hirarchy',
     lightBg: false,
     lightText: true,
     lightTextDesc: true,

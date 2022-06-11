@@ -29,16 +29,40 @@ const Navbar = ({toggle}) => {
                 </MobileIcon>
                 <NavMenu>
                   <NavItems>
-                    <NavLinks to="home">Home</NavLinks>
+                    <NavLinks to="home"
+                                  activeClass="active"
+                                  spy={true}
+                                  smooth={true}
+                                  offset={0}
+                                  duration={1000}
+                    >Home</NavLinks>
                   </NavItems>
                   <NavItems>
-                    <NavLinks to="achievements">Achievements</NavLinks>
+                    <NavLinks to="achievements" 
+                                  activeClass="active"
+                                  spy={true}
+                                  smooth={true}
+                                  offset={0}
+                                  duration={1000}
+                    >Achievements</NavLinks>
                   </NavItems>
                   <NavItems>
-                    <NavLinks to="hierarchy">Hierarchy</NavLinks>
+                    <NavLinks to="hierarchy"
+                                  activeClass="active"
+                                  spy={true}
+                                  smooth={true}
+                                  offset={0}
+                                  duration={1000}
+                    >Hierarchy</NavLinks>
                   </NavItems>
                   <NavItems>
-                    <NavLinks to="about">About</NavLinks>
+                    <NavLinks to="about"
+                                  activeClass="active"
+                                  spy={true}
+                                  smooth={true}
+                                  offset={0}
+                                  duration={1000}
+                    >About</NavLinks>
                   </NavItems>
                 </NavMenu>
                 <NavBtn>

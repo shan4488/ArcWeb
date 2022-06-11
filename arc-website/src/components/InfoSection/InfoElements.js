@@ -5,7 +5,7 @@ export const InfoContainer = styled.div`
     background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
 
     @media screen and (max-width: 768px) {
-        padding: 100px;
+        padding: 100px 20px 20px 20px;
 
     }
 `
@@ -18,7 +18,7 @@ export const InfoWrapper = styled.div`
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
-    padding: 0 24px;
+    padding: 0 44px;
     justify-content: center;
 `
 
@@ -35,12 +35,13 @@ export const InfoRow = styled.div`
 
 export const Column1 = styled.div`
     margin-bottom: 15px;
+    //margin-right:100px;
     padding: 0 35px;
     grid-area: col1;
 `
-
 export const Column2 = styled.div`
     margin-bottom: 15px;
+    //margin-left:100px;
     padding: 0 35px;
     grid-area: col2;
 `
