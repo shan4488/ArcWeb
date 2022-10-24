@@ -36,18 +36,19 @@ export const InfoRow = styled.div`
 export const Column1 = styled.div`
     margin-bottom: 15px;
     //margin-right:100px;
-    padding: 0 35px;
+    padding: 0 15px;
     grid-area: col1;
 `
 export const Column2 = styled.div`
     margin-bottom: 15px;
     //margin-left:100px;
-    padding: 0 35px;
+    padding: 0 15px;
     grid-area: col2;
+    overflow: hidden;
 `
 
 export const TextWrapper = styled.div`
-    max-width: 540px;
+    max-width: 640px;
     padding-top: 0;
     padding-bottom: 60px;
 `
@@ -77,14 +78,29 @@ export const Heading = styled.h1`
 export const SubTitle = styled.p`
     max-width: 440px;
     margin-bottom: 35px;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 29px;
+    overflow:hidden;
     color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
 `
 
 export const BtnWrap = styled.div`
     display: flex;
     justify-content: flex-start;
+`
+
+export const BtnLink = styled.a`
+    text-decoration:none;
+    position:relative;
+    left:-130px;
+    top:18px;
+    color:black;
+
+    &:hover {
+        color: #fff;
+        transition: 0.3s ease-out;
+    }
+
 `
 
 export const ImgWrapper = styled.div`
@@ -96,4 +112,5 @@ export const Img = styled.img`
     width: 100%;
     margin: 0 0 10px 0px;
     padding-right: 0px;
+    
 `

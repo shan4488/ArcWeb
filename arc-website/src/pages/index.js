@@ -6,7 +6,9 @@ import InfoSection from '../components/InfoSection';
 import { homeObjFour, homeObjOne, homeObjThree, homeObjTwo } from '../components/InfoSection/Data';
 import Hierarchy from '../components/Hierarchy';
 import Footer from '../components/Footer';
-import Projects from '../components/Projects';
+import CardSlider from '../components/CardSlider/CardSlider';
+import Achievements from '../components/Achievements/Achievements';
+import Members from '../components/Members/Members';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -19,12 +21,17 @@ const Home = () => {
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <Navbar toggle={toggle}/>
         <HeroSection />
-        <InfoSection { ...homeObjOne } />
-        <Projects/>
-        <InfoSection { ...homeObjTwo } />
+        <InfoSection { ...homeObjFour } />
+        {/* <Founder /> */}
+        {/* <InfoSection { ...homeObjTwo } /> */}
+        <Achievements/>
+        <CardSlider/>
+        
         {/* <InfoSection { ...homeObjThree } /> */}
         <Hierarchy />
-        <InfoSection { ...homeObjFour } />
+        <Members/>
+        <InfoSection { ...homeObjOne } />
+        
         <Footer />
     </>
   )

@@ -29,16 +29,16 @@ const Navbar = ({toggle}) => {
                 </MobileIcon>
                 <NavMenu>
                   <NavItems>
-                    <NavLinks to="home"
+                    <NavLinks to="about"
                                   activeClass="active"
                                   spy={true}
                                   smooth={true}
                                   offset={0}
                                   duration={1000}
-                    >Home</NavLinks>
+                    >About</NavLinks>
                   </NavItems>
                   <NavItems>
-                    <NavLinks to="achievements" 
+                    <NavLinks to="achievement" 
                                   activeClass="active"
                                   spy={true}
                                   smooth={true}
@@ -56,17 +56,17 @@ const Navbar = ({toggle}) => {
                     >Hierarchy</NavLinks>
                   </NavItems>
                   <NavItems>
-                    <NavLinks to="about"
+                    <NavLinks to="connect"
                                   activeClass="active"
                                   spy={true}
                                   smooth={true}
                                   offset={0}
                                   duration={1000}
-                    >About</NavLinks>
+                    >Connect</NavLinks>
                   </NavItems>
                 </NavMenu>
                 <NavBtn>
-                    <NavBtnLink to='/signin'>Sign In</NavBtnLink>
+                    <NavBtnLink href="https://form.jotform.com/222442335902449" target="_blank" aria-label="Get Membership">Join Us</NavBtnLink>
                 </NavBtn>
             </NavbarContainer>
         </Nav>

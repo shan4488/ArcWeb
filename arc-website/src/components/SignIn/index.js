@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { Container, FormWrap, Icon, FormContent, Form, FormH1, FormLabel, FormInput, FormButton, Text } from './SigninElements'
 import Axios from "axios";
+import { Route } from 'react-router-dom';
 
 
 const SignIn = () => {
@@ -9,7 +10,7 @@ const SignIn = () => {
   const [rPassword, setRpassword] = useState("");
 
   const submitContent = () => {
-    Axios.post("http://localhost:3001/api/insert", {
+    Axios.post("http://localhost:3001/signin", {
       rEmail: rEmail,
       rPassword: rPassword,
     }).then(response => {
@@ -27,7 +28,7 @@ const SignIn = () => {
           <FormWrap>
             <Icon to="/">arc</Icon>
             <FormContent>
-              <Form action="/api/insert" method='POST'>
+              <Form action="/" method='POST'>
                 <FormH1>Sign into your account</FormH1>
                 <FormLabel htmlFor="for">Email</FormLabel>
                 <FormInput type="email" name="rEmail" onChange={(e) => {

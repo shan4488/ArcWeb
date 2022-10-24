@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-app.post("/api/insert", (req, res) => {
+app.post("/signin", (req, res) => {
     const rEmail = req.body.rEmail;
     const rPassword = req.body.rPassword;
     console.log(rEmail);

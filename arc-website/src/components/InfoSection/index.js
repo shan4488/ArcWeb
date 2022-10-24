@@ -1,8 +1,8 @@
 import React from 'react'
 import { Button } from '../HeroSection/ButtonElements'
-import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, SubTitle, BtnWrap, ImgWrapper, Img } from './InfoElements'
+import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, SubTitle, BtnWrap, ImgWrapper, Img, BtnLink   } from './InfoElements'
 
-const InfoSection = ({lightBg, lightText, id, imgStart, topLine, headline, darkText, description, buttonLabel, img, alt, primary, dark, dark2}) => {
+const InfoSection = ({lightBg, lightText, id, imgStart, topLine, headline, darkText, description, buttonLabel, img, alt, primary, dark, dark2,link}) => {
   return (
     <>
         <InfoContainer lightBg={lightBg} id={id}>
@@ -25,7 +25,8 @@ const InfoSection = ({lightBg, lightText, id, imgStart, topLine, headline, darkT
                                 dark={dark ? 1 : 0}
                                 dark2={dark2 ? 1 : 0}
                             >
-                                {buttonLabel}</Button>
+                                </Button>
+                                <BtnLink href={link} target='_blank'>{buttonLabel}</BtnLink>
                         </BtnWrap>
                     </TextWrapper>
                     </Column1>

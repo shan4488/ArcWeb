@@ -60,10 +60,10 @@ export const Heroh1 = styled.h1`
 
 export const HeroPara1 = styled.p`
     color:#fff;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     text-decoration:none;
     text-align: center;
-    padding:5px;
+    padding:8px;
 `
 
 export const HeroBtnWrap = styled.button`

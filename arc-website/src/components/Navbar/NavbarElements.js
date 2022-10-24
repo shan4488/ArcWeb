@@ -39,6 +39,10 @@ export const NavLogo = styled(LinkR)`
     margin-left: 24px;
     font-weight: bold;
     text-decorator: none;
+
+    &:hover {
+        color:rgb(0, 255, 149);;
+    }
 `
 
 export const MobileIcon = styled.div`
@@ -86,6 +90,9 @@ export const NavLinks = styled(LinkS)`
     &:active {
         border-bottom: 3px solid #01bf71;
     }
+    &:hover {
+        color:white;
+    }
 `
 
 export const NavBtn = styled.nav`
@@ -97,7 +104,7 @@ export const NavBtn = styled.nav`
     }
 `
 
-export const NavBtnLink = styled(LinkR)`
+export const NavBtnLink = styled.a`
     border-radius: 50px;
     background: #00a663;
     white-space: nowrap;
